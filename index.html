@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <title>Justabeli</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      function scrollto(div)
+      {
+      $('html,body').animate(
+      {
+        scrollTop: $("#"+div).offset().top
+      },'slow');
+      }
+    </script>
   </head>
   <body>
-    <img src="images/Justabeli_Logo.png" alt="Justabeli logo">
-    <p>Write anything you want to tell the world.</p>
+    <div id="menu">
+      <li onclick="scrollto('sobre');">Sobre</li>
+      <li onclick="scrollto('presskit');">Presskit</li>
+      <li onclick="scrollto('links');">Links</li>
+      <li onclick="scrollto('contatos');">Contatos</li>
+    </div>
+
+    <div id="sobre">
+      <h1>Sobre</h1>
+      <p>
+        Nascido em 2001, o Justabeli avança impiedosamente rasgando as fronteiras da cena metal nacional, divulgando seu quinto e melhor lançamento, Blast the Defector, com uma abordagem mais obscura e melódica, mantendo seu peso e agressividade. <br>
+        Recebendo grande aclamação em todo o território nacional, a banda viajou extensivamente por todo o país, criando uma reputação de performances ultrajantes ao vivo e ganhando um exército de aliados leais. <br>
+        A banda está buscando oportunidades de turnês em 2019 e 2020 para suportar o lançamento de seu mais recente Full Length, "Intense Heavy Clash", que saiu do forno em 09/março/2019. <br>
+        Oferecendo um som único e um show de grande audiência, o Justabeli se dedica a se estabelecer como uma força dominante na cena extrema de metal através de turnês extensas e distribuição de álbuns.
+      </p>
+    </div>
+
+    <div id="presskit">
+      <h1>Presskit</h1>
+      <p>
+        PDF <br>
+        Onedrive
+      </p>
+    </div>
+
+    <div id="links">
+      <h1>Links</h1>
+      <p>
+        <b>Facebook:</b> www.facebook.com/justabeli <br>
+        <b>Instagram:</b> @justabeli (www.instagram.com/justabeli/) <br>
+        <b>Youtube:</b> www.youtube.com/justabeliwar <br>
+        <b>Metal Archives:</b> www.metal-archives.com/bands/Justabeli <br>
+        <b>Spotify:</b> https://open.spotify.com/artist/7b54CJtUy67cp1s3mmRzGL
+      </p>
+    </div>
+
+    <div id="contatos">
+      <h1>Contatos</h1>
+      <p>
+        Tel/Whatsapp: +55 11 9 7024-3172 (Gabriel) <br>
+        Tel/Whatsapp: +55 11 9 8225-4487 (Walter) <br>
+        justabeli@hotmail.com
+      </p>
+    </div>
+
   </body>
 </html>
